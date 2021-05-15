@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/TCS-fv.css">
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -116,16 +115,16 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-sm ftco-animate">
-    				<a href="https://aws.amazon.com/" class="partner"><img src="images/AWS-Logo.jpg" style="margin-top: 10px;" class="img-fluid" ></a>
+    				<a href="https://aws.amazon.com/" class="partner"><img src="images/AWS-Logo.jpg" class="img-fluid" ></a>
     			</div>
     			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/Android_LG.PNG	"  class="img-fluid" ></a>
+    				<a href="#" class="partner"><img src="images/android_logo.png"  class="img-fluid" ></a>
     			</div>
     			<div class="col-sm ftco-animate">
-    				<a href="https://java.com/en/" class="partner"><img src="images/Java.png"  class="img-fluid" ></a>
+    				<a href="https://java.com/en/" class="partner"><img src="images/Java_logo.png"  class="img-fluid" ></a>
     			</div>
     			<div class="col-sm ftco-animate">
-    				<a href="https://www.python.org/" class="partner"><img src="images/Python_logo.jpg" style="margin-top: 10px;" class="img-fluid" ></a>
+    				<a href="https://www.python.org/" class="partner"><img src="images/Python_logo.jpg" class="img-fluid" ></a>
     			</div>
     			<div class="col-sm ftco-animate">
     				<a href="#" class="partner"><img src="images/partner-1.png" class="img-fluid" ></a>
@@ -200,7 +199,7 @@
 					  	<h2 class="heading">Experience</h2>
 					    <div class="resume-wrap d-flex ftco-animate">
 					    	<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-idea"></span>
+					    		<span>A</span>
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">2021-current</span>
@@ -211,7 +210,7 @@
 	    				</div>
 	    				<div class="resume-wrap d-flex ftco-animate">
 	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
+					    		<span>T</span>
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">2018-2020</span>
@@ -222,7 +221,7 @@
 	    				</div>
 	    				<div class="resume-wrap d-flex ftco-animate">
 	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
+					    		<span>A</span>
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">2017-2018</span>
@@ -272,28 +271,11 @@
 					  		<div class="col-lg-4 mb-4">
 						      <div class="bg-white rounded-lg shadow p-4">
 						        <h2 class="h5 font-weight-bold text-center mb-4">JAVA</h2>
-
-						        <!-- Progress bar 1 -->
-						        <div class="progress mx-auto" data-value='95'>
-						          <span class="progress-left">
-                        <span class="progress-bar border-primary"></span>
-						          </span>
-						          <span class="progress-right">
-                        <span class="progress-bar border-primary"></span>
-						          </span>
-						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-						            <div class="h2 font-weight-bold">95<sup class="small">%</sup></div>
-						          </div>
-						        </div>
-						        <!-- END -->
-
+                    <app-progress value="95"></app-progress>
 						        <!-- Demo info -->
 						        <div class="row text-center mt-4">
-						          <div class="col-6 border-right">
-						            <div class="h4 font-weight-bold mb-0">4</div><span class="small text-gray">FrameWorks</span>
-						          </div>
-						          <div class="col-6">
-						            <div class="h4 font-weight-bold mb-0">10</div><span class="small text-gray">Libraries</span>
+						          <div class="col-12">
+						            <div class="h4 font-weight-bold mb-0">4</div><span class="small text-gray">FrameWorks and Libraries</span>
 						          </div>
 						        </div>
 						        <!-- END -->
@@ -305,17 +287,7 @@
 						        <h2 class="h5 font-weight-bold text-center mb-4">Python</h2>
 
 						        <!-- Progress bar 1 -->
-						        <div class="progress mx-auto" data-value='75'>
-						          <span class="progress-left">
-                        <span class="progress-bar border-primary"></span>
-						          </span>
-						          <span class="progress-right">
-                        <span class="progress-bar border-primary"></span>
-						          </span>
-						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-						            <div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
-						          </div>
-						        </div>
+						        <app-progress value="75"></app-progress>
 						        <!-- END -->
 
 						        <!-- Demo info -->
@@ -336,17 +308,7 @@
 						        <h2 class="h5 font-weight-bold text-center mb-4">Javascript</h2>
 
 						        <!-- Progress bar 1 -->
-						        <div class="progress mx-auto" data-value='60'>
-						          <span class="progress-left">
-                        <span class="progress-bar border-primary"></span>
-						          </span>
-						          <span class="progress-right">
-                        <span class="progress-bar border-primary"></span>
-						          </span>
-						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-						            <div class="h2 font-weight-bold">60<sup class="small">%</sup></div>
-						          </div>
-						        </div>
+						       <app-progress value="60"></app-progress>
 						        <!-- END -->
 
 						        <!-- Demo info -->
@@ -494,9 +456,9 @@
         </div>
     		<div class="row">
 					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1 shadow">
+						<a class="services-1 shadow" onclick="showCertificate(1)">
 							<span class="icon">
-								<i class="flaticon-analysis"></i>
+								<i class="icon-internet-explorer"></i>
 							</span>
 							<div class="desc">
 								<h3 class="mb-5">Web Design</h3>
@@ -902,6 +864,28 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal" tabindex="-1" id="certificate-1">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body ceritificates">
+            <img src="images/work-1.jpg" alt="" class="img-fluid" />
+            <img src="images/work-2.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     
   
 
@@ -920,10 +904,10 @@
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-  <script src="js/count.js"></script>
+  <script src="js/certificate.js"></script>
+  <script src="js/app-progress.js"></script>
     
   </body>
 </html>

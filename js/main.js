@@ -37,10 +37,6 @@
 	};
 	loader();
 
-	// Scrollax
-   $.Scrollax();
-
-
 
    // Burger Menu
 	var burgerMenu = function() {
@@ -185,7 +181,6 @@
 				$('.number').each(function(){
 					var $this = $(this),
 						num = $this.data('number');
-						console.log(num);
 					$this.animateNumber(
 					  {
 					    number: num,
@@ -312,7 +307,8 @@ TxtRotate.prototype.tick = function() {
   this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
   var that = this;
-  var delta = 300 - Math.random() * 100;
+  // var delta = 300 - Math.random() * 100;
+  var delta = 300;
 
   if (this.isDeleting) { delta /= 2; }
 
