@@ -192,9 +192,7 @@
 			}
 
 		} , { offset: '95%' } );
-
 	}
-	counter();
 
 
 	var contentWayPoint = function() {
@@ -343,6 +341,34 @@ window.onload = function() {
 };
 
 
+var countWithFirebase = function() {
+  const url = "https://itsmekhader-aa60d-default-rtdb.asia-southeast1.firebasedatabase.app/.json";
+
+  $.get(url).done(function(data) {
+    // data -> { counts: 400 }
+    let body = {
+      counts: 400
+    }; 
+
+    if (data && data.counts) {
+      body.counts = data.counts + 1;
+    }
+
+    $('#counter').attr('data-number', body.counts)
+    
+    counter();
+
+    $.ajax(url, {
+      method: 'PUT',
+      data: JSON.stringify(body),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+  });
+}
+countWithFirebase();
+
 })(jQuery);
 
 
@@ -433,6 +459,5 @@ $(function() {
     return percentage / 100 * 360
 
   }
-
 });
 
