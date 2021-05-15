@@ -9672,3 +9672,15 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+a {
+  cursor: pointer;
+}
+
+.ceritificates .img-fluid {
+  margin-bottom: 20px;
+}
+
+.ceritificates .img-fluid:last-of-type {
+  margin-bottom: 0;
+}
