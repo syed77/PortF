@@ -1,0 +1,5 @@
+.description {
+  position: absolute;
+  bottom: 10px;
+  color: var(--light);
+}
