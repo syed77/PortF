@@ -1,3 +1,3 @@
-function showCertificate(modalNumber) {
-  $(`#certificate`).modal();
+function showCertificate(id) {
+  $(id).modal();
 }

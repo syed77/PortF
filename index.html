@@ -623,7 +623,7 @@
         </div>
         <div class="row">
           <div class="col-md-4 text-center d-flex ftco-animate">
-            <a class="services-1 shadow" onclick="showCertificate(1)">
+            <a class="services-1 shadow" onclick="showCertificate('#modal-1')">
               <span class="icon">
                 <i class="icon-internet-explorer"></i>
               </span>
@@ -637,7 +637,7 @@
             </a>
           </div>
           <div class="col-md-4 text-center d-flex ftco-animate">
-            <a class="services-1 shadow" onclick="showCertificate(2)">
+            <a class="services-1 shadow" onclick="showCertificate('#modal-2')">
               <span class="icon">
                 <i class="flaticon-flasks"></i>
               </span>
@@ -651,7 +651,7 @@
             </a>
           </div>
           <div class="col-md-4 text-center d-flex ftco-animate">
-            <a href="#" class="services-1 shadow">
+            <a class="services-1 shadow" onclick="showCertificate('#modal-3')">
               <span class="icon">
                 <i class="flaticon-ideas"></i>
               </span>
@@ -666,7 +666,7 @@
           </div>
 
           <div class="col-md-4 text-center d-flex ftco-animate">
-            <a href="#" class="services-1 shadow">
+            <a class="services-1 shadow" onclick="showCertificate('#modal-4')">
               <span class="icon">
                 <i class="flaticon-innovation"></i>
               </span>
@@ -1247,27 +1247,26 @@
       </div>
     </footer>
 
-    <div class="modal" tabindex="-1" id="certificate">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body ceritificates row" id="cert-1">
-            <img src="images/work-1.jpg" class="img-fluid col-6" />
-            <img src="images/work-2.jpg" class="img-fluid col-6" />
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-modal 
+      modalId="modal-1"
+      heading="Modal 1"
+      images="work-1.jpg, work-2.jpg"
+    ></app-modal>
+    <app-modal 
+      modalId="modal-2"
+      heading="Modal 2"
+      images="work-1.jpg, work-2.jpg, work-3.jpg"
+    ></app-modal>
+    <app-modal 
+      modalId="modal-3"
+      heading="Modal 3"
+      images="work-1.jpg, work-2.jpg, work-3.jpg, work-4.jpg"
+    ></app-modal>
+    <app-modal 
+      modalId="modal-4"
+      heading="Modal 4"
+      images="work-1.jpg, work-2.jpg, work-3.jpg, work-4.jpg, work-5.jpg"
+    ></app-modal>
 
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen">
@@ -1309,6 +1308,6 @@
     <script src="js/main.js"></script>
     <script src="js/certificate.js"></script>
     <script src="js/app-progress.js"></script>
-    <script src="js/visits.js"></script>
+    <script src="js/app-modal.js"></script>
   </body>
 </html>
